@@ -1,0 +1,21 @@
+:root{
+
+    --backgroundGeneral-clear: #F9F9F9;
+    --backgroundGeneral-dark: #1E1E1E;
+
+    --text-clear: #1E1E1E;
+    --text-dark: #F9F9F9;
+
+    --principalColor-clear: #0077CC;
+    --principalColor-dark: #4DA6FF;
+
+    --backgroundCard-clear: #FFFFFF;
+    --backgroundCard-dark: #2C2C2C;
+
+    --hoverLinkButton-clear: #005FA3;
+    --hoverLinkButton-dark: #66BFFF;
+
+    --borderDivisors-clear: #E0E0E0;
+    --borderDivisors-dark: #444444;
+
+}

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduTech Academy</title>
+    <link rel="stylesheet" href="style/output.css">
+</head>
+<body class="">
+
+    <header class="header
+    ">
+
+        <nav class="header__interactive
+        flex flex-row justify-between items-center
+        p-[0.75rem]
+        ">
+
+            <div class="header__logo
+            flex flex-row items-center gap-[0.5rem]
+            ">
+                <img src="./assets/logo.svg" class="h-[1.5rem]" alt="">
+                <h1>EduTech Academy</h1>
+            </div>
+
+
+            <div class="header__mobile">
+                <a href="#" class="text-[1rem]"> &#9776 </a>
+            </div>
+
+            <div class="header__desktop
+            hidden
+            md:flex">
+                <ul class="header__pages">
+                    <li>Home</li>
+                    <li>Cursos</li>
+                    <li>Matrículas</li>
+                    <li>Sobre</li>
+                </ul>
+
+                <img src="assets/moon.svg" alt="">
+            </div>
+
+        </nav>
+
+    </header>
+    
+    <main class="w-[100vw] 
+    bg-[var(--backgroundGeneral-clear)] 
+    py-[1.5rem] px-[1rem]">
+        
+        <header class="main__header">
+            <h1 class="
+            text-[1.75rem]
+            font-bold text-center">
+                Construa Seu Futuro com a EduTech Academy
+            </h1>
+            <p class="
+            text-center
+            ">
+                Cursos de alta qualidade para impulsionar sua carreira e transformar sua vida profissional.
+            </p>
+        </header>
+
+        <div class="main__courses flex flex-col gap-[1rem]">
+
+            <h2 class="
+            text-[1.25rem] font-bold">Nossos Cursos </h2>
+
+            <!--Fullstack-->
+            <section class="card
+            rounded-b-lg
+            border-black
+            ">
+
+                <img src="./assets/fullstack.jpg" class="rounded-t-lg" alt="">
+
+                <div class="card__content
+                ">
+
+                    <div class="card__text
+                    p-[1rem]
+                    ">
+
+                        <h3 class="
+                        font-bold">Desenvolvimento Web Fullstack</h3>
+
+                        <div class="card__informations">
+
+                            <div class="card__courseLoad
+                            flex flex-row items-center gap-[0.1rem]">
+                                <img src="assets/clock.svg" class="h-[1rem]" alt="">
+                                <p class="text-[0.75rem]">120 horas</p>
+                            </div>
+                            <div class="card__method
+                            flex flex-row items-center gap-[0.1rem]">
+                                <img src="assets/map-pin.svg" class="h-[1rem]" alt="">
+                                <p class="text-[0.75rem]">EAD</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="card__button">
+                    
+                        <a href="./pages/curso-web.html">Ver detalhes</a>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+            <!--Data Science-->
+            <section class="card">
+
+                <img src="./assets/data-science.jpg" alt="">
+
+                <div class="card__content">
+
+                    <div class="card__text">
+
+                        <h3 class="">Data Science & Machine Learning</h3>
+
+                        <div class="card__informations">
+
+                            <div class="card__courseLoad
+                            flex flex-row items-center gap-[0.1rem]">
+                                <img src="assets/clock.svg" class="h-[1rem]" alt="">
+                                <p class="text-[0.75rem]">100 horas</p>
+                            </div>
+                            <div class="card__method
+                            flex flex-row items-center gap-[0.1rem]">
+                                <img src="assets/map-pin.svg" class="h-[1rem]" alt="">
+                                <p class="text-[0.75rem]">Presencial</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="card__button">
+                    
+                        <a href="./pages/">Ver detalhes</a>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+            <!--Marketing Digital-->
+            <section class="card">
+
+                <img src="./assets/marketing.jpg" alt="">
+
+                <div class="card__content">
+
+                    <div class="card__text">
+
+                        <h3 class="">Marketing Digital & SEO</h3>
+
+                        <div class="card__informations">
+
+                            <div class="card__courseLoad
+                            flex flex-row items-center gap-[0.1rem]">
+                                <img src="assets/clock.svg" class="h-[1rem]" alt="">
+                                <p class="text-[0.75rem]">80 horas</p>
+                            </div>
+                            <div class="card__method
+                            flex flex-row items-center gap-[0.1rem]">
+                                <img src="assets/map-pin.svg" class="h-[1rem]" alt="">
+                                <p class="text-[0.75rem]">EAD</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="card__button">
+                    
+                        <a href="./pages/">Ver detalhes</a>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+            <!--UX/UI Design-->
+            <section class="card">
+
+                <img src="./assets/ux-design.jpg" alt="">
+
+                <div class="card__content">
+
+                    <div class="card__text">
+
+                        <h3 class="">UX/UI Design</h3>
+
+                        <div class="card__courseLoad
+                        flex flex-row items-center gap-[0.1rem]">
+                            <img src="assets/clock.svg" class="h-[1rem]" alt="">
+                            <p class="text-[0.75rem]">90 horas</p>
+                        </div>
+                        <div class="card__method
+                        flex flex-row items-center gap-[0.1rem]">
+                            <img src="assets/map-pin.svg" class="h-[1rem]" alt="">
+                            <p class="text-[0.75rem]">Presencial</p>
+                        </div>
+
+                    </div>
+
+                    <div class="card__button">
+                    
+                        <a href="./pages/">Ver detalhes</a>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+        </div>
+
+        <div class="main__enrollment">
+
+            <h2 class="">Matrícula</h2>
+
+            <div class="enrollment__forms">
+
+                <h3>Formulário de Matrícula</h3>
+
+                <form action="" method="post">
+
+                    <label for="name">Nome Completo *</label>
+                    <input type="text" name="name" id="name" placeholder="Digite seu nome completo">
+
+                    <label for="email">Email *</label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu email">
+
+
+                    <label for="numberPhone">Telefone *</label>
+                    <input type="tel" name="name" id="name" placeholder="(00) 00000-0000">
+
+                    
+                    <label for="cpf">CPF *</label>
+                    <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00">
+                    
+                    <label for="courses">Curso Desejado *</label>
+                    <select name="courses" id="courses">
+                        <option value="fullstack">Desenvolvimento Web Fullstack</option>
+                        <option value="dataScience">Data Science & Machine Learning</option>
+                        <option value="marketing">Marketing Digital & SEO</option>
+                        <option value="uxDesign">UX/UI Design</option>
+                    </select>
+                    
+                    <label for="cep">CEP *</label>
+                    <input type="text" name="cep" id="cep" placeholder="00000-000">
+                    
+                    <label for="street">Rua *</label>
+                    <input type="text" name="street" id="street">
+                    
+                    <label for="neighborhood">Bairro *</label>
+                    <input type="text" name="neighborhood" id="neighborhood">
+
+                    
+                    <label for="city">Cidade *</label>
+                    <input type="text" name="city" id="city">
+
+
+                    <label for="federativeUnit">Estado *</label>
+                    <input type="text" name="federativeUnit" id="federativeUnit">
+
+
+                    <input type="submit" value="Enviar Matrícula">
+                </form>
+            </div>
+
+            <aside class="enrollment__knowledges">
+
+                <h3 class="">Áreas do Conhecimento</h3>
+
+                <ul>
+                    <li>Tecnologia da Informação</li>
+                    <li>Administração e Negócios</li>
+                    <li>Marketing Digital</li>
+                    <li>Design Gráfico</li>
+                    <li>Engenharia</li>
+                    <li>Saúde</li>
+                    <li>Educação</li>
+                    <li>Gastronomia</li>
+                </ul>
+
+            </aside>
+            
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer__credentials">
+
+            <div class="footer_enterprise">
+
+                <h3>
+                    EduTech Academy
+                </h3>
+                <p>
+                    Transformando carreiras através da educação de qualidade desde 2010.
+                </p>
+            </div>
+    
+            <div class="footer__contacts">
+    
+                <h3></h3>
+
+                <div class="footer__contacts-content flex flex-col">
+                    <div class="footer__numberPhone 
+                    flex flex-row">
+                        <img src="assets/phone.svg" alt="">
+                        <p>(11) 99999-9999</p>
+                    </div>
+
+                    <p>contato@edutechacademy.com.br</p>
+                    <p>Av. Paulista, 1000 – São Paulo/SP</p>
+
+                </div>
+
+            </div>
+    
+            <div class="footer__social-media">
+    
+                <h3>Redes Sociais</h3>
+
+                <div class="footer__social-list
+                flex flex-row">
+                    <img src="assets/facebook.svg" alt="">
+                    <img src="assets/instagram.svg" alt="">
+                    <img src="assets/twitter.svg" alt="">
+                    <img src="assets/linkedin.svg" alt="">
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <p >© 2025 EduTech Academy. Todos os direitos reservados. </p>
+
+    </footer>
+
+</body>
+</html>
