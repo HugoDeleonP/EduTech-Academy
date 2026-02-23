@@ -14,6 +14,8 @@
         <nav class="header__interactive
         flex flex-row justify-between items-center
         p-[0.75rem]
+        lg:py-[1rem]
+        lg:px-[1rem]
         ">
 
             <div class="header__logo
@@ -24,18 +26,26 @@
                 class="
                 poppins-bold
                 text-[var(--principalColor-clear)]
+                lg:text-[1rem]
+
                 ">EduTech Academy</h1>
             </div>
 
 
-            <div class="header__mobile">
+            <div class="header__mobile
+            lg:hidden">
                 <a href="#" class="text-[1rem]"> &#9776 </a>
             </div>
 
             <div class="header__desktop
             hidden
-            md:flex">
-                <ul class="header__pages">
+            md:flex md:flex-row
+            gap-[1.5rem]">
+                <ul class="header__pages
+                flex flex-row gap-[1.5rem]
+
+                lg:text-[0.8rem]
+                ">
                     <li>Home</li>
                     <li>Cursos</li>
                     <li>Matrículas</li>
@@ -64,259 +74,297 @@
             <p class="
             text-center
             text-[1rem]/[1.25rem]
-
+            
+            lg:px-[15rem]
             ">
                 Cursos de alta qualidade para impulsionar sua carreira e transformar sua vida profissional.
             </p>
         </header>
 
-        <div class="main__courses flex flex-col gap-[1rem] py-[3.5rem]">
+        <div class="main__courses flex flex-col gap-[1rem] py-[3.5rem]
+        ">
 
             <h2 class="
             text-[1.25rem] font-bold">Nossos Cursos </h2>
 
-            <!--Fullstack-->
-            <section class="card
-            rounded-b-lg
-            border-[1px]
-            border-solid
-            border-[#f0f3f7]
+            <div class="main_courses-list
+            flex flex-col
+            lg:flex-row lg:justify-between  
             ">
 
-                <img src="./assets/fullstack.jpg" class="rounded-t-md
-                object-cover
-                h-[145px]
-                w-[100%]" alt="">
+                <!--Fullstack-->
+                <section class="card
+                rounded-b-lg
+                border-[1px]
+                border-solid
+                border-[#f0f3f7]
 
-                <div class="card__content p-[1rem]
-                flex flex-col
-                gap-[1rem]
+                lg:w-[230px]
                 ">
 
-                    <div class="card__text
-                    
+                    <img src="./assets/fullstack.jpg" class="rounded-t-md
+                    object-cover
+                    h-[145px]
+                    w-[100%]
+                    " alt="">
+
+                    <div class="card__content p-[1rem]
+                    flex flex-col
+                    gap-[1rem]
                     ">
 
-                        <h3 class="
-                        font-bold
-                        text-[0.85rem]
-                        ">Desenvolvimento Web Fullstack</h3>
+                        <div class="card__text
+                        
+                        ">
 
-                        <div class="card__informations">
+                            <h3 class="
+                            font-bold
+                            text-[0.85rem]
+                            lg:text-[0.9rem]
+                            ">Desenvolvimento Web Fullstack</h3>
 
-                            <div class="card__courseLoad
-                            flex flex-row items-center gap-[0.1rem]">
-                                <img src="assets/clock.svg" 
-                                class="h-[1rem]"
-                                alt="">
-                                <p class="text-[0.7rem]">120 horas</p>
+                            <div class="card__informations">
+
+                                <div class="card__courseLoad
+                                flex flex-row items-center gap-[0.1rem]">
+                                    <img src="assets/clock.svg" 
+                                    class="h-[1rem]"
+                                    alt="">
+                                    <p class="text-[0.7rem]">120 horas</p>
+                                </div>
+                                <div class="card__method
+                                flex flex-row items-center gap-[0.1rem]">
+                                    <img src="assets/map-pin.svg" class="h-[1rem]" alt="">
+                                    <p class="text-[0.7rem]">EAD</p>
+                                </div>
+
                             </div>
-                            <div class="card__method
-                            flex flex-row items-center gap-[0.1rem]">
-                                <img src="assets/map-pin.svg" class="h-[1rem]" alt="">
-                                <p class="text-[0.7rem]">EAD</p>
-                            </div>
+
+                        </div>
+
+                        <div class="card__button
+                        flex flex-row justify-center items-center py-[0.4rem]
+                        rounded-md
+                        bg-blue-600">
+                        
+                            <a href="./pages/curso-web.html" 
+                            class=" text-[0.7rem]
+                            text-white font-bold">Ver detalhes</a>
 
                         </div>
 
                     </div>
 
-                    <div class="card__button
-                    flex flex-row justify-center items-center py-[0.4rem]
-                    rounded-md
-                    bg-blue-600">
-                    
-                        <a href="./pages/curso-web.html" 
-                        class=" text-[0.7rem]
-                        text-white font-bold">Ver detalhes</a>
 
-                    </div>
+                </section>
 
-                </div>
+                <!--Data Science-->
+                <section class="card
+                rounded-b-lg
+                border-[1px]
+                border-solid
+                border-[#f0f3f7]
+                
+                lg:w-[230px]
+                ">
 
+                    <img src="./assets/data-science.jpg" class="
+                    rounded-t-md
+                    object-cover
+                    h-[145px]
+                    w-[100%]" alt="">
 
-            </section>
+                    <div class="card__content p-[1rem]
+                    flex flex-col
+                    gap-[1rem]">
 
-            <!--Data Science-->
-            <section class="card
-            rounded-b-lg
-            border-[1px]
-            border-solid
-            border-[#f0f3f7]">
+                        <div class="card__text">
 
-                <img src="./assets/data-science.jpg" class="
-                rounded-t-md
-                object-cover
-                h-[145px]
-                w-[100%]" alt="">
+                            <h3 class="
+                            font-bold
+                            text-[0.85rem]
+                            lg:text-[0.9rem]
+                            ">Data Science & Machine Learning</h3>
 
-                <div class="card__content p-[1rem]
-                flex flex-col
-                gap-[1rem]">
+                            <div class="card__informations">
 
-                    <div class="card__text">
+                                <div class="card__courseLoad
+                                flex flex-row items-center gap-[0.1rem]">
+                                    <img src="assets/clock.svg" class="h-[1rem]" alt="">
+                                    <p class="text-[0.7rem]">100 horas</p>
+                                </div>
+                                <div class="card__method
+                                flex flex-row items-center gap-[0.1rem]">
+                                    <img src="assets/map-pin.svg" class="h-[1rem]" alt="">
+                                    <p class="text-[0.7rem]">Presencial</p>
+                                </div>
 
-                        <h3 class="
-                        font-bold
-                        text-[0.85rem]
-                        ">Data Science & Machine Learning</h3>
-
-                        <div class="card__informations">
-
-                            <div class="card__courseLoad
-                            flex flex-row items-center gap-[0.1rem]">
-                                <img src="assets/clock.svg" class="h-[1rem]" alt="">
-                                <p class="text-[0.7rem]">100 horas</p>
                             </div>
-                            <div class="card__method
-                            flex flex-row items-center gap-[0.1rem]">
-                                <img src="assets/map-pin.svg" class="h-[1rem]" alt="">
-                                <p class="text-[0.7rem]">Presencial</p>
-                            </div>
+
+                        </div>
+
+                        <div class="card__button
+                        flex flex-row justify-center items-center py-[0.4rem]
+                        rounded-md
+                        bg-blue-600">
+                        
+                            <a href="./pages/" class="text-[0.7rem]
+                            text-white font-bold">Ver detalhes</a>
 
                         </div>
 
                     </div>
 
-                    <div class="card__button
-                    flex flex-row justify-center items-center py-[0.4rem]
-                    rounded-md
-                    bg-blue-600">
-                    
-                        <a href="./pages/" class="text-[0.7rem]
-                        text-white font-bold">Ver detalhes</a>
 
-                    </div>
+                </section>
 
-                </div>
+                <!--Marketing Digital-->
+                <section class="card
+                rounded-b-lg
+                border-[1px]
+                border-solid
+                border-[#f0f3f7]
+                
+                lg:w-[230px]
+                ">
 
+                    <img src="./assets/marketing.jpg" class="
+                    rounded-t-md
+                    object-cover
+                    h-[145px]
+                    w-[100%]" alt="">
 
-            </section>
+                    <div class="card__content p-[1rem]
+                    flex flex-col
+                    gap-[1rem]
+                    lg:gap-[2.25rem]
+                    ">
 
-            <!--Marketing Digital-->
-            <section class="card
-            rounded-b-lg
-            border-[1px]
-            border-solid
-            border-[#f0f3f7]">
+                        <div class="card__text">
 
-                <img src="./assets/marketing.jpg" class="
-                rounded-t-md
-                object-cover
-                h-[145px]
-                w-[100%]" alt="">
+                            <h3 class="
+                            font-bold
+                            text-[0.85rem]
+                            lg:text-[0.9rem]
+                            ">Marketing Digital & SEO</h3>
 
-                <div class="card__content p-[1rem]
-                flex flex-col
-                gap-[1rem]">
+                            <div class="card__informations">
 
-                    <div class="card__text">
+                                <div class="card__courseLoad
+                                flex flex-row items-center gap-[0.1rem]">
+                                    <img src="assets/clock.svg" class="h-[1rem]" alt="">
+                                    <p class="text-[0.7rem]">80 horas</p>
+                                </div>
+                                <div class="card__method
+                                flex flex-row items-center gap-[0.1rem]">
+                                    <img src="assets/map-pin.svg" class="h-[1rem]" alt="">
+                                    <p class="text-[0.7rem]">EAD</p>
+                                </div>
 
-                        <h3 class="
-                        font-bold
-                        text-[0.85rem]">Marketing Digital & SEO</h3>
-
-                        <div class="card__informations">
-
-                            <div class="card__courseLoad
-                            flex flex-row items-center gap-[0.1rem]">
-                                <img src="assets/clock.svg" class="h-[1rem]" alt="">
-                                <p class="text-[0.7rem]">80 horas</p>
                             </div>
-                            <div class="card__method
-                            flex flex-row items-center gap-[0.1rem]">
-                                <img src="assets/map-pin.svg" class="h-[1rem]" alt="">
-                                <p class="text-[0.7rem]">EAD</p>
-                            </div>
+
+                        </div>
+
+                        <div class="card__button
+                        flex flex-row justify-center items-center py-[0.4rem]
+                        rounded-md
+                        bg-blue-600">
+                        
+                            <a href="./pages/" class="text-[0.7rem]
+                            text-white font-bold">Ver detalhes</a>
 
                         </div>
 
                     </div>
 
-                    <div class="card__button
-                    flex flex-row justify-center items-center py-[0.4rem]
-                    rounded-md
-                    bg-blue-600">
-                    
-                        <a href="./pages/" class="text-[0.7rem]
-                        text-white font-bold">Ver detalhes</a>
 
-                    </div>
-
-                </div>
+                </section>
 
 
-            </section>
+                <!--UX/UI Design-->
+                <section class="card
+                rounded-b-lg
+                border-[1px]
+                border-solid
+                border-[#f0f3f7]
+                
+                lg:w-[230px]
+                ">
 
+                    <img src="./assets/ux-design.jpg" class="
+                    rounded-t-md
+                    object-cover
+                    h-[145px]
+                    w-[100%]"
+                    alt="">
 
-            <!--UX/UI Design-->
-            <section class="card
-            rounded-b-lg
-            border-[1px]
-            border-solid
-            border-[#f0f3f7]">
+                    <div class="card__content p-[1rem]
+                    flex flex-col
+                    gap-[1rem]
+                    lg:gap-[2.25rem]
+                    ">
 
-                <img src="./assets/ux-design.jpg" class="
-                rounded-t-md
-                object-cover
-                h-[145px]
-                w-[100%]"
-                alt="">
+                        <div class="card__text">
 
-                <div class="card__content p-[1rem]
-                flex flex-col
-                gap-[1rem]">
+                            <h3 class="
+                            font-bold
+                            text-[0.85rem]
+                            lg:text-[0.9rem]
+                            ">UX/UI Design</h3>
 
-                    <div class="card__text">
+                            <div class="card__information">
 
-                        <h3 class="
-                        font-bold
-                        text-[0.85rem]">UX/UI Design</h3>
+                                <div class="card__courseLoad
+                                flex flex-row items-center gap-[0.1rem]">
+                                    <img src="assets/clock.svg" class="h-[1rem]" alt="">
+                                    <p class="text-[0.7rem]">90 horas</p>
+                                </div>
+                                <div class="card__method
+                                flex flex-row items-center gap-[0.1rem]">
+                                    <img src="assets/map-pin.svg" class="h-[1rem]" alt="">
+                                    <p class="text-[0.7rem]">Presencial</p>
+                                </div>                            
 
-                        <div class="card__information">
-
-                            <div class="card__courseLoad
-                            flex flex-row items-center gap-[0.1rem]">
-                                <img src="assets/clock.svg" class="h-[1rem]" alt="">
-                                <p class="text-[0.7rem]">90 horas</p>
                             </div>
-                            <div class="card__method
-                            flex flex-row items-center gap-[0.1rem]">
-                                <img src="assets/map-pin.svg" class="h-[1rem]" alt="">
-                                <p class="text-[0.7rem]">Presencial</p>
-                            </div>                            
+
+
 
                         </div>
 
+                        <div class="card__button
+                        flex flex-row justify-center items-center py-[0.4rem]
+                        rounded-md
+                        bg-blue-600">
+                        
+                            <a href="./pages/" class="text-[0.7rem]
+                            text-white font-bold">Ver detalhes</a>
 
-
-                    </div>
-
-                    <div class="card__button
-                    flex flex-row justify-center items-center py-[0.4rem]
-                    rounded-md
-                    bg-blue-600">
-                    
-                        <a href="./pages/" class="text-[0.7rem]
-                        text-white font-bold">Ver detalhes</a>
+                        </div>
 
                     </div>
 
-                </div>
+
+                </section>
 
 
-            </section>
+            </div>
 
+            
 
         </div>
 
         <div class="main__enrollment
         flex flex-col
-        gap-[4rem]">
+        gap-[4rem]
+        
+        lg:flex-row
+        lg:gap-[2rem]
+        ">
 
             <div class="main__forms
             flex flex-col
-            gap-[1rem]">
+            gap-[1rem]
+            lg:min-w-[70%]">
                 <h2 class="
                 poppins-bold
                 font-bold
@@ -329,92 +377,131 @@
                 border-[1px]
                 border-solid
                 border-[#f0f3f7]
-                rounded-md">
+                rounded-md
+                
+                lg:grid
+                ">
 
 
                     <h3 class="font-bold">Formulário de Matrícula</h3>
 
                     <form action="" method="post" class="flex flex-col
-                    gap-[1rem]">
+                    gap-[1.5rem]
+                    
+                    lg:grid lg:grid-cols-2 lg:grid-rows-7">
 
-                        <label for="name" class="text-[0.75rem]">Nome Completo *</label>
-                        <input type="text" name="name" id="name" 
-                        class="text-[0.75rem]
-                        border-[1px] border-solid border-[#f0f3f7] rounded-md
-                        p-[0.4rem]"
-                        placeholder="Digite seu nome completo">
-
-                        <label for="email" class="text-[0.75rem]">Email *</label>
-                        <input type="email" name="email" id="email" 
-                        class="text-[0.75rem]
-                        border-[1px] border-solid border-[#f0f3f7] rounded-md
-                        p-[0.4rem]"
-                        placeholder="Digite seu email">
-
-
-                        <label for="numberPhone" class="text-[0.75rem]">Telefone *</label>
-                        <input type="tel" name="name" id="name"                     
-                        class="text-[0.75rem]
-                        border-[1px] border-solid border-[#f0f3f7] rounded-md
-                        p-[0.4rem]"
-                        placeholder="(00) 00000-0000">
-
+                        <div class="enrollment__name
+                        flex flex-col
                         
-                        <label for="cpf" class="text-[0.75rem]">CPF *</label>
-                        <input type="text" name="cpf" id="cpf"                     
-                        class="text-[0.75rem]
-                        border-[1px] border-solid border-[#f0f3f7] rounded-md
-                        p-[0.4rem]"
-                        placeholder="000.000.000-00">
-                        
-                        <label for="courses" class="text-[0.75rem]">Curso Desejado *</label>
-                        <select name="courses" id="courses"                     
-                        class="text-[0.75rem]
-                        border-[1px] border-solid border-[#f0f3f7] rounded-md
-                        p-[0.4rem]">
-                            <option value="fullstack">Desenvolvimento Web Fullstack</option>
-                            <option value="dataScience">Data Science & Machine Learning</option>
-                            <option value="marketing">Marketing Digital & SEO</option>
-                            <option value="uxDesign">UX/UI Design</option>
-                        </select>
-                        
-                        <label for="cep" class="text-[0.75rem]">CEP *</label>
-                        <input type="text" name="cep" id="cep"                     
-                        class="text-[0.75rem]
-                        border-[1px] border-solid border-[#f0f3f7] rounded-md
-                        p-[0.4rem]" placeholder="00000-000">
-                        
-                        <label for="street" class="text-[0.75rem]">Rua *</label>
-                        <input type="text" name="street" id="street"
-                        class="text-[0.75rem]
-                        border-[1px] border-solid border-[#f0f3f7] rounded-md
-                        p-[0.4rem]">
-                        
-                        <label for="neighborhood" class="text-[0.75rem]">Bairro *</label>
-                        <input type="text" name="neighborhood" id="neighborhood"
-                        class="text-[0.75rem]
-                        border-[1px] border-solid border-[#f0f3f7] rounded-md
-                        p-[0.4rem]">
+                        ">
+                            <label for="name" class="text-[0.75rem]">Nome Completo *</label>
+                            <input type="text" name="name" id="name" 
+                            class="text-[0.75rem]
+                            border-[1px] border-solid border-[#f0f3f7] rounded-md
+                            p-[0.4rem]"
+                            placeholder="Digite seu nome completo">
+                        </div>
 
-                        
-                        <label for="city" class="text-[0.75rem]">Cidade *</label>
-                        <input type="text" name="city" id="city"
-                        class="text-[0.75rem]
-                        border-[1px] border-solid border-[#f0f3f7] rounded-md
-                        p-[0.4rem]">
+                        <div class="enrollment__email
+                        flex flex-col">
+                            <label for="email" class="text-[0.75rem]">Email *</label>
+                            <input type="email" name="email" id="email" 
+                            class="text-[0.75rem]
+                            border-[1px] border-solid border-[#f0f3f7] rounded-md
+                            p-[0.4rem]"
+                            placeholder="Digite seu email">
+                        </div>
 
+                        <div class="enrollment__numberPhone
+                        flex flex-col">
+                            <label for="numberPhone" class="text-[0.75rem]">Telefone *</label>
+                            <input type="tel" name="numberPhone" id="numberPhone"                     
+                            class="text-[0.75rem]
+                            border-[1px] border-solid border-[#f0f3f7] rounded-md
+                            p-[0.4rem]"
+                            placeholder="(00) 00000-0000">
+                        </div>
 
-                        <label for="federativeUnit" class="text-[0.75rem]">Estado *</label>
-                        <input type="text" name="federativeUnit" id="federativeUnit"
-                        class="text-[0.75rem]
-                        border-[1px] border-solid border-[#f0f3f7] rounded-md
-                        p-[0.4rem]">
+                        <div class="enrollment__cpf
+                        flex flex-col">
+                            <label for="cpf" class="text-[0.75rem]">CPF *</label>
+                            <input type="text" name="cpf" id="cpf"                     
+                            class="text-[0.75rem]
+                            border-[1px] border-solid border-[#f0f3f7] rounded-md
+                            p-[0.4rem]"
+                            placeholder="000.000.000-00">
+                        </div>
 
+                        <div class="enrollment__courses
+                        flex flex-col
+                        lg:col-span-2">
+                            <label for="courses" class="text-[0.75rem]">Curso Desejado *</label>
+                            <select name="courses" id="courses"                     
+                            class="text-[0.75rem]
+                            border-[1px] border-solid border-[#f0f3f7] rounded-md
+                            p-[0.4rem]">
+                                <option value="none" selected disabled hidden>Selecione um curso</option>
+                                <option value="fullstack">Desenvolvimento Web Fullstack</option>
+                                <option value="dataScience">Data Science & Machine Learning</option>
+                                <option value="marketing">Marketing Digital & SEO</option>
+                                <option value="uxDesign">UX/UI Design</option>
+                            </select>
+                        </div>
+
+                        <div class="enrollment__cep
+                        flex flex-col">
+                            <label for="cep" class="text-[0.75rem]">CEP *</label>
+                            <input type="text" name="cep" id="cep"                     
+                            class="text-[0.75rem]
+                            border-[1px] border-solid border-[#f0f3f7] rounded-md
+                            p-[0.4rem]" placeholder="00000-000">
+                        </div>
+
+                        <div class="enrollment__street
+                        flex flex-col">
+                            <label for="street" class="text-[0.75rem]">Rua *</label>
+                            <input type="text" name="street" id="street"
+                            class="text-[0.75rem]
+                            border-[1px] border-solid border-[#f0f3f7] rounded-md
+                            p-[0.4rem]">
+                        </div>
+
+                        <div class="enrollment__neighborhood
+                        flex flex-col">
+                            <label for="neighborhood" class="text-[0.75rem]">Bairro *</label>
+                            <input type="text" name="neighborhood" id="neighborhood"
+                            class="text-[0.75rem]
+                            border-[1px] border-solid border-[#f0f3f7] rounded-md
+                            p-[0.4rem]">
+                        </div>
+
+                        <div class="enrollment__city
+                        flex flex-col">
+                            <label for="city" class="text-[0.75rem]">Cidade *</label>
+                            <input type="text" name="city" id="city"
+                            class="text-[0.75rem]
+                            border-[1px] border-solid border-[#f0f3f7] rounded-md
+                            p-[0.4rem]">
+                        </div>
+
+                        <div class="enrollment__federativeUnit
+                        flex flex-col">
+                            <label for="federativeUnit" class="text-[0.75rem]">Estado *</label>
+                            <input type="text" name="federativeUnit" id="federativeUnit"
+                            class="text-[0.75rem]
+                            border-[1px] border-solid border-[#f0f3f7] rounded-md
+                            p-[0.4rem]">
+                        </div>
 
                         <input type="submit" value="Enviar Matrícula" 
                         class="flex flex-row justify-center py-[0.3rem]
                         rounded-md
-                        bg-blue-600 text-[0.7rem] text-white font-bold">
+                        bg-blue-600 text-[0.7rem] text-white font-bold
+                        row-7
+                        justify-self-start
+                        self-end
+                        lg:p-[0.5rem]">
+
                     </form>
                 </div>
             </div>
@@ -428,9 +515,13 @@
             border-[1px]
             border-solid
             border-[#f0f3f7]
-            rounded-md">
+            rounded-md
+            
+            lg:self-start
+            lg:w-[100%]">
 
-                <h3 class="font-bold">Áreas do Conhecimento</h3>
+                <h3 class="font-bold
+                lg:text-[0.9rem]">Áreas do Conhecimento</h3>
 
                 <ul class="text-[0.8rem]
                 flex flex-col
@@ -455,22 +546,31 @@
     <footer class="footer     
     bg-[var(--backgroundGeneral-clear)]
     p-[1rem]
-    flex flex-col gap-[2rem]">
+    flex flex-col gap-[2rem]
+    ">
 
         <div class="footer__credentials
-        flex flex-col gap-[2rem]">
+        flex flex-col gap-[2rem]
+        
+        lg:grid
+        lg:grid-cols-3
+        lg:justify-between">
 
             <div class="footer_enterprise
-            flex flex-col gap-[0.75rem]">
+            flex flex-col gap-[0.75rem]
+            lg:gap-[0.5rem]">
 
                 <h3
                 class="text-center font-bold
-                text-[0.9rem]">
+                text-[0.9rem]
+                ">
                     EduTech Academy
                 </h3>
                 <p
                 class="text-center
-                text-[0.75rem]">
+                text-[0.75rem]
+                lg:text-[0.8rem]
+                ">
                 Transformando carreiras através da educação de qualidade desde 2010.
                 </p>
             </div>
@@ -513,7 +613,8 @@
             </div>
     
             <div class="footer__social-media
-            flex flex-col justify-center items-center gap-[0.5rem]">
+            flex flex-col justify-center items-center gap-[0.5rem]
+            lg:justify-start">
     
                 <h3
                 class="font-bold
@@ -547,5 +648,6 @@
 
     </footer>
 
+    <script type="module" src="src/net/edutech/main.js"></script>
 </body>
 </html>
